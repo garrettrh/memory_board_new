@@ -1,0 +1,15 @@
+<div class="col-md-10 col-md-offset-1 text-center">
+	<header>
+		<h1><%= @memory.title %></h1>
+			<h5>Posted on <%= @memory.date_published %></h5>
+	</header>
+
+	<article>
+		<p><%= @memory.body %></p>
+	</article>
+
+	<%= link_to 'Show', @memory %>
+	<%= link_to 'Edit', edit_memory_path(@memory) %>
+    <%= link_to 'Destroy', @memory, method: :delete, data: { confirm: 'Are you sure?' } %>
+
+</div>

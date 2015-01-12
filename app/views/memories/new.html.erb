@@ -1,0 +1,18 @@
+
+<h1>What do you remember?</h1>
+
+<%= form_for @memory do |f| %>
+
+	<div>
+		<%= f.label :title, "Title:" %>
+		<%= f.text_field :title %>
+	</div>
+
+	<div>
+		<%= f.label :body, "Memory:" %>
+		<%= f.text_area :body %>
+	</div>
+
+	<%= f.submit "Add it!" %>
+
+<% end %>
