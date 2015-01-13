@@ -1,0 +1,1 @@
+memories = angular.module('memories', [])

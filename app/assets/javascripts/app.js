@@ -1,1 +1,0 @@
-memories = angular.module('memories', []);
