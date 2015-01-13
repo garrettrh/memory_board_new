@@ -1,2 +1,2 @@
 angular
-	.module('memories', [])
+	.module('memories', []);
