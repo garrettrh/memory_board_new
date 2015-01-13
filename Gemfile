@@ -15,9 +15,12 @@ gem 'coffee-rails', '~> 4.0.0'
 # Use MongoDB
 gem 'mongoid', '~> 4.0.0'
 
-gem 'bower-rails'
+# gem 'bower-rails'
+gem 'bootstrap-sass', '~> 3.2.0'
 
 gem "foreman"
+
+gem 'angularjs-rails'
 
 gem 'angular-rails-templates'
 
