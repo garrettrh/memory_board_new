@@ -12,10 +12,10 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require bootstrap-sprockets
 //= require angular
-//= require angular/angular
 //= require angular-rails-templates
+//= require angular-bootstrap
+//= require bootstrap-sprockets
 //= require memories-app/app
 //= require_tree ./memories-app/templates
 //= require_tree ./memories-app/modules
