@@ -1,22 +1,6 @@
 source 'https://rubygems.org'
 
-# Ruby version for Heroku upload
 ruby '2.0.0'
-# MongoDB
-gem 'mongoid', '~>4.0.0'
-# Bower for rails
-gem 'bower-rails'
-
-gem 'thin', group: :production
-gem 'rails_12factor', group: :production
-gem "foreman"
-
-group :production, :staging do
-	gem "rails_stdout_logging"
-	gem "rails_serve_static_assets"
-end
-
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.8'
 # Use SCSS for stylesheets
@@ -27,6 +11,23 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
+
+# Use MongoDB
+gem 'mongoid', '~> 4.0.0'
+
+gem 'bower-rails'
+
+gem "foreman"
+
+gem 'angular-rails-templates'
+
+gem 'thin', group: :production
+
+group :production, :staging do
+  gem "rails_12factor"
+  gem "rails_stdout_logging"
+  gem "rails_serve_static_assets"
+end
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
