@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  root 'memories#index'
+  root 'home#index'
   resources :memories
   resources :users
   

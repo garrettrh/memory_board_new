@@ -4,7 +4,5 @@ class HomeController < ApplicationController
 		@memories = Memory.all
 		@users = User.all
 	end
-
-	end
 	
 end

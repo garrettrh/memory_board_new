@@ -7,7 +7,7 @@ gem 'mongoid', '~>4.0.0'
 # Bower for rails
 gem 'bower-rails'
 
-# gem 'thin', group: :production
+gem 'thin', group: :production
 
 gem "foreman"
 
