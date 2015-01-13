@@ -16,6 +16,7 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'mongoid', '~> 4.0.0'
 
 gem 'bower-rails'
+
 gem 'bootstrap-sass', '~> 3.2.0'
 
 gem "foreman"
