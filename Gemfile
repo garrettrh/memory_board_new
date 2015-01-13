@@ -21,10 +21,11 @@ gem "foreman"
 
 gem 'angular-rails-templates'
 
+gem 'rails_12factor'
+
 gem 'thin', group: :production
 
 group :production, :staging do
-  gem "rails_12factor"
   gem "rails_stdout_logging"
   gem "rails_serve_static_assets"
 end
