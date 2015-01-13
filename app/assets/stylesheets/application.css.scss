@@ -16,3 +16,12 @@
  
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+body {
+	background-color: pink;
+	color: white;
+}
+
+.content-div {
+	background-color: green;
+}

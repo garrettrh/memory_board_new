@@ -14,4 +14,13 @@
 //= require jquery_ujs
 //= require bootstrap-sprockets
 //= require angular
-//= require_tree .
+//= require angular-rails-templates
+//= require memories-app/app
+//= require_tree ./memories-app/templates
+//= require_tree ./memories-app/modules
+//= require_tree ./memories-app/filters
+//= require_tree ./memories-app/directives
+//= require_tree ./memories-app/models
+//= require_tree ./memories-app/services
+//= require_tree ./memories-app/controllers
+
