@@ -6,6 +6,9 @@ ruby '2.0.0'
 gem 'mongoid', '~>4.0.0'
 # Bower for rails
 gem 'bower-rails'
+gem 'rails_12factor', group: :production
+gem 'thin', group: :production
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.8'
