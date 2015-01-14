@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
 
   root 'home#index'
-  resources :memories
+  resources :memories do
+    resources :comments
+  end
   resources :users
   get '/signup' => 'users#new'
   get '/login'     => 'sessions#new'

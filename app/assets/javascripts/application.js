@@ -16,12 +16,12 @@
 //= require angular-rails-templates
 //= require angular-bootstrap
 //= require bootstrap-sprockets
-//= require memories-app/app
-//= require_tree ./memories-app/templates
-//= require_tree ./memories-app/modules
-//= require_tree ./memories-app/filters
-//= require_tree ./memories-app/directives
-//= require_tree ./memories-app/models
-//= require_tree ./memories-app/services
-//= require_tree ./memories-app/controllers
+// require memories-app/app
+// require_tree ./memories-app/templates
+// require_tree ./memories-app/modules
+// require_tree ./memories-app/filters
+// require_tree ./memories-app/directives
+// require_tree ./memories-app/models
+// require_tree ./memories-app/services
+// require_tree ./memories-app/controllers
 

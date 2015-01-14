@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="app">
+<html ng-app="">
 <head>
   <title>Memory Board New</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
@@ -7,15 +7,25 @@
   
   <%= csrf_meta_tags %>
 </head>
-<nav class="navbar navbar-default navbar-fixed-top top-nav">
-	
+<nav class="navbar navbar-default navbar-fixed-top green-nav">
+	<% if logged_in? %>
+		Logged in as: <%= current_user.username %> | 
+		<%= link_to 'Home', root_path %> | 
+		<%= link_to 'Log Out', logout_path, method: :delete %>
+	<% else %>
+		<span>
+			Welcome, Guest! <%= link_to 'Log In', login_path %>
+		or
+    		<%= link_to 'Sign Up', signup_path %>
+    	</span>
+	<% end %>	
 </nav>
-<body class="container">
+<body class="container main-wrap">
 
 <%= yield %>
 
 </body>
-<footer class="footer bottom-foot">
+<footer class="footer green-foot">
 	
 </footer>
 </html>

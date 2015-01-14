@@ -1,17 +1,14 @@
 <div class="col-md-10 col-md-offset-1 text-center">
 	<header>
 		<h1><%= @memory.title %></h1>
-			<h5>Remembered by <%= @memory.user.username %> on <%= @memory.date_published %></h5>
+			<h4>Remembered by <%= @memory.user.username %> on <%= @memory.date_published %></h5>
 	</header>
 
-	<article>
+	<article class="content-div">
 		<p><%= @memory.body %></p>
 	</article>
 
-	<%= link_to 'Show', @memory %>
-	<% if current_user = Memory.find(params[:id]).user %>
-	<%= link_to 'Edit', edit_memory_path(@memory) %>
-    <%= link_to 'Destroy', @memory, method: :delete, data: { confirm: 'Are you sure?' } %>
-    <% end %>
-
+	<%= link_to 'Back To Memories', memories_path %> | 
+	<%= link_to 'Did You Misremember?', edit_memory_path(@memory) %> | 
+    <%= link_to 'Fuggedabouttit!', @memory, method: :delete, data: { confirm: 'Do you really wanna fuggedabouttit?' } %>
 </div>
