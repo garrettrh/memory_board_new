@@ -1,0 +1,24 @@
+
+<div class="col-md-12 text-center content-div">
+<h1>Did you misremember?</h1>
+
+<%= form_for @memory do |f| %>
+
+	<div>
+		<%= f.label :title, "Title:" %>
+		<%= f.text_field :title %>
+	</div>
+
+	<div>
+		<%= f.label :body, "Memory:" %>
+		<%= f.text_area :body %>
+	</div>
+
+	<%= f.submit "Fix it!" %>
+
+
+<% end %></br>
+</div>
+<div class="col-md-12 text-center">
+<%= link_to "Back Home!", root_path %>
+</div>

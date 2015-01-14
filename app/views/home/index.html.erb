@@ -1,7 +1,12 @@
-<div class="col-md-12 text-center" ng-app="memories">
-	<h1><span class="glyphicon glyphicon-heart"></span> Welcome to Grandma's House! <span class="glyphicon glyphicon-heart"></span></h1>
+<div class="col-md-12 text-center">
+	<h1><i class="fa fa-heart"></i> Welcome to Grandma's House! <i class="fa fa-heart"></i></h1>
 	<p>GA WDI Project {{ 1+1 }}!</p>
-
+	<% if logged_in? %>
+		<p>Welcome, <%= current_user.username %>!</p>
+		<p><%= link_to 'Log Out', logout_path, method: :delete %></p>
+	<% else %>
+		<p>Welcome, Guest! Please <%= link_to 'Log In', login_path %> or <%= link_to 'Sign Up', signup_path %>!</p>
+	<% end %>
 </div>
 
 <div class="col-md-4 col-md-offset-1 text-center content-div"><h1>All Memories</h1>
@@ -17,12 +22,12 @@
 	</div>
 </div>
 
-<div class="col-md-4 col-md-offset-1 text-center content-div"><h1>All Users</h1>
+<div class="col-md-4 col-md-offset-2 text-center content-div"><h1>All Users</h1>
 
 	<div>
 		<% @users.each do |user| %>
 			<div>
-				<%= link_to user.name, user_path(user) %>
+				<%= link_to user.username, user_path(user) %>
 			</div>
 		<% end %>
 

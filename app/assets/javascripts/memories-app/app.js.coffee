@@ -1,11 +1,12 @@
-@memoriesapp = angular.module('memories', [])
+angular
+	.module('app', [])
 
 	
-@memoriesapp.config([
+.config([
   '$httpProvider', ($httpProvider)->
     $httpProvider.defaults.headers.common['X-CSRF-Token'] = $('meta[name=csrf-token]').attr('content')
 ])
 
-@memoriesapp.run(->
+.run(->
   console.log 'angular app running'
 )

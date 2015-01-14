@@ -14,14 +14,26 @@
  *= require_self
  */
  
+@import "font-awesome-sprockets";
+@import "font-awesome";
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
 body {
 	background-color: pink;
-	color: white;
+	color: darkgreen;
+	margin-top: 60px;
 }
 
 .content-div {
-	background-color: green;
+	background-color: lightgreen;
 }
+
+// input[type="text"], textarea {
+//   background-color : green; 
+// }
+
+.top-nav, .bottom-foot {
+	background-color: lightgreen;
+}
+

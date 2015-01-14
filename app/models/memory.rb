@@ -8,4 +8,8 @@ class Memory
   def date_published
   	self.created_at.localtime.strftime("%A, %B %-d, %Y at %l:%M %p")
   end
+
+  #validates_associated :user on: :update
+  #validates_associated :user on: :destroy
+
 end

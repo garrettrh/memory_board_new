@@ -1,4 +1,5 @@
 class MemoriesController < ApplicationController
+	# before_action :require_user, :on => [:update, :destroy]
 
 	def index
 		@memories = Memory.all
@@ -10,6 +11,7 @@ class MemoriesController < ApplicationController
 
 	def create
 		@memory = Memory.new(memory_params)
+		@memory.user = current_user
 		if @memory.save
 			redirect_to memory_path(@memory)
 		else
@@ -48,5 +50,13 @@ class MemoriesController < ApplicationController
 	def memory_params
 		params.require(:memory).permit(:title, :body, :user)
 	end
+
+	# def require_user
+ #  		if current_user != Memory.find(params[:id]).user
+ #    		redirect_to root_path
+ #    		flash[:notice] = 'You are not the author of this Memory!'
+	# 	end
+
+ #  	end
 
 end
